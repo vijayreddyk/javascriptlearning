@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js trying</title>
+	<script type="text/javascript">
+		function display() {
+			// body...
+			var name=document.getElementById('uname')+'';
+			var password=document.getElementById('pwd')+'';
+			alert(name);
+			alert(password);
+			if((name=='vijay') && (password=='vijay'))
+				alert('welcome');
+			else
+				alert('wrong usename and password');
+		}
+	</script>
+</head>
+<body bgcolor="pink">
+	<form method="post">
+		<center>
+			<input type="textfield" name="uname" id="uname" value="uname"/><br>
+			<input type="textfield" name="password" id="pwd" value="pwd"/><br>
+			<input type="submit" id="login" onclick="display()" value="login"/>
+		</center>
+	</form>
+</body>
+</html>
